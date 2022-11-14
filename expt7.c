@@ -75,9 +75,10 @@ struct node *insert(struct node *tree, int x)
 {
     struct node *p, *temp, *root;
     p = (struct node *)malloc(sizeof(struct node ));
+    p->data = x;
     p->left = NULL;
     p->right = NULL;
-    p->data = x;
+  
 
     if (tree == NULL)
     {
